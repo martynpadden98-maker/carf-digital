@@ -394,11 +394,11 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
       if (json.ok) {
         showSuccess();
       } else {
-        showError('There was a problem sending your registration. Please email us directly at info@classifi.digital.');
+        showError('There was a problem sending your registration. Please email us directly at info@carf.digital.');
       }
     })
     .catch(function () {
-      showError('Could not send your registration. Please check your connection or email us at info@classifi.digital.');
+      showError('Could not send your registration. Please check your connection or email us at info@carf.digital.');
     })
     .finally(function () {
       if (submitBtn) {
