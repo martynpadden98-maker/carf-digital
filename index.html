@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CARF.digital — software to help businesses prepare for reporting under the Crypto-Asset Reporting Framework. From the team behind Classifi, in partnership with C-Thru." />
+  <title>CARF.digital — Crypto-Asset Reporting Framework Readiness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+
+      <a href="#" class="logo" aria-label="CARF.digital home">
+        CARF<span class="logo-dot">.</span>digital
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Register interest</a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary">Register interest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Floating CTA (visible after scrolling past hero, hidden near contact section) -->
+  <a href="#contact" class="floating-cta" id="floating-cta" aria-label="Register your interest">
+    Register interest
+  </a>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+          <h1 id="hero-headline">CARF reporting is coming.<br>Is your business ready?</h1>
+          <p class="hero-sub">
+            CARF.digital is purpose-built software to help businesses meet their obligations under the
+            Crypto-Asset Reporting Framework, the OECD standard for automatic exchange of crypto-asset
+            tax information. First exchanges are expected in 2027. Preparation starts now.
+          </p>
+          <p class="hero-credibility">
+            Built by the team behind <strong>Classifi</strong> (CRS &amp; FATCA classification software)
+            and developed in partnership with <strong>C-Thru</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Register early interest</a>
+            <a href="#overview" class="btn btn-secondary">Learn about CARF</a>
+          </div>
+        </div>
+
+        <!-- Visual panel: CARF reporting workflow (interactive flip cards) -->
+        <div class="hero-visual">
+          <div class="workflow-panel">
+            <div class="workflow-panel-header">
+              <span class="workflow-panel-title">How CARF.digital works</span>
+              <span class="workflow-panel-hint">Tap each step to learn more</span>
+            </div>
+            <ol class="workflow-steps">
+
+              <li class="workflow-step">
+                <div class="step-flipper" role="region" aria-label="Step 01: Identify">
+                  <!-- Front -->
+                  <button class="step-face step-front" aria-expanded="false">
+                    <div class="workflow-step-number" aria-hidden="true">01</div>
+                    <div class="workflow-step-body">
+                      <span class="workflow-step-label">Identify</span>
+                      <span class="workflow-step-desc">Determine which customers and entities fall within CARF scope</span>
+                    </div>
+                    <span class="step-hint-icon" aria-hidden="true">+</span>
+                  </button>
+                  <!-- Back -->
+                  <div class="step-face step-back">
+                    <div class="step-back-body">
+                      <p class="step-back-title">Who needs to be identified</p>
+                      <ul class="step-back-list">
+                        <li><strong>Individuals:</strong> name, date of birth, address, TIN(s) and tax residence jurisdiction(s)</li>
+                        <li><strong>Entities:</strong> legal name, address, jurisdiction, TIN, entity type. Controlling persons identified where required.</li>
+                      </ul>
+                    </div>
+                    <button class="step-back-close" aria-label="Back to step overview">←</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="workflow-step">
+                <div class="step-flipper" role="region" aria-label="Step 02: Due diligence">
+                  <button class="step-face step-front" aria-expanded="false">
+                    <div class="workflow-step-number" aria-hidden="true">02</div>
+                    <div class="workflow-step-body">
+                      <span class="workflow-step-label">Due diligence</span>
+                      <span class="workflow-step-desc">Collect self-certifications, verify tax residency, document decisions</span>
+                    </div>
+                    <span class="step-hint-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div class="step-face step-back">
+                    <div class="step-back-body">
+                      <p class="step-back-title">What due diligence involves</p>
+                      <ul class="step-back-list">
+                        <li>Obtain self-certification from each reportable customer</li>
+                        <li>Verify plausibility against other records on file and document each determination</li>
+                        <li>Review and update on any change of circumstances</li>
+                      </ul>
+                    </div>
+                    <button class="step-back-close" aria-label="Back to step overview">←</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="workflow-step">
+                <div class="step-flipper" role="region" aria-label="Step 03: Organise">
+                  <button class="step-face step-front" aria-expanded="false">
+                    <div class="workflow-step-number" aria-hidden="true">03</div>
+                    <div class="workflow-step-body">
+                      <span class="workflow-step-label">Organise</span>
+                      <span class="workflow-step-desc">Structure transaction data and reportable account information to schema</span>
+                    </div>
+                    <span class="step-hint-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div class="step-face step-back">
+                    <div class="step-back-body">
+                      <p class="step-back-title">What gets structured</p>
+                      <ul class="step-back-list">
+                        <li>Transaction types: fiat exchanges, crypto-to-crypto, and transfers</li>
+                        <li>Aggregate values per reporting period, matched to verified account holders and OECD XML schema fields</li>
+                      </ul>
+                    </div>
+                    <button class="step-back-close" aria-label="Back to step overview">←</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="workflow-step">
+                <div class="step-flipper" role="region" aria-label="Step 04: Report">
+                  <button class="step-face step-front" aria-expanded="false">
+                    <div class="workflow-step-number" aria-hidden="true">04</div>
+                    <div class="workflow-step-body">
+                      <span class="workflow-step-label">Report</span>
+                      <span class="workflow-step-desc">Produce audit-ready output aligned to the OECD CARF XML schema</span>
+                    </div>
+                    <span class="step-hint-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div class="step-face step-back">
+                    <div class="step-back-body">
+                      <p class="step-back-title">What gets filed</p>
+                      <ul class="step-back-list">
+                        <li>CARF XML schema-compliant output per reporting jurisdiction</li>
+                        <li>Submitted to your domestic competent authority with a full audit trail retained for every filing</li>
+                      </ul>
+                    </div>
+                    <button class="step-back-close" aria-label="Back to step overview">←</button>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+            <div class="workflow-panel-footer">
+              <span class="workflow-footer-text">CARF.digital — structured end-to-end compliance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WHAT IS CARF?
+    ============================================================ -->
+    <section class="section section-light" id="overview" aria-labelledby="overview-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="overview-heading">What is CARF?</h2>
+          <p class="section-intro">
+            The Crypto-Asset Reporting Framework is an OECD standard that requires businesses
+            operating in the crypto-asset space to collect, verify, and report tax-relevant
+            information about their customers' transactions. That information is then automatically
+            exchanged between participating tax authorities around the world, in the same way
+            CRS works for financial accounts.
+          </p>
+          <p class="section-intro">
+            CARF was approved by the OECD in 2023. In 2024, the OECD published the XML schema,
+            user guide, and detailed interpretative guidance. Jurisdictions are now legislating
+            domestic implementation, with first information exchanges expected in 2027.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-3">
+
+          <div class="card">
+            <div class="card-label">Scope</div>
+            <h3>Broad obligation</h3>
+            <p>
+              CARF applies to Crypto-Asset Service Providers (CASPs) and other intermediaries
+              that facilitate exchanges, transfers, and custody of crypto-assets. Scope is
+              deliberately wide, covering exchanges, custodians, brokers, and certain
+              payment processors.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-label">What must be reported</div>
+            <h3>Customer and transaction data</h3>
+            <p>
+              Businesses must identify reportable customers, conduct due diligence to confirm
+              tax residency, and report transaction-level data including crypto-asset type,
+              volume, and value across exchanges for fiat, exchanges between crypto-assets,
+              and transfers.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-label">Why it matters</div>
+            <h3>Automatic exchange</h3>
+            <p>
+              Reported data is exchanged automatically between tax authorities in participating
+              jurisdictions. Non-compliance carries regulatory and reputational risk. With
+              first exchanges expected in 2027, operational readiness cannot be left to
+              the last moment.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TIMELINE
+    ============================================================ -->
+    <section class="section section-dark" id="timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+
+        <div class="section-header section-header-light">
+          <h2 id="timeline-heading">Key milestones</h2>
+          <p class="section-intro">
+            The CARF implementation calendar is moving quickly. Understanding the timeline
+            is the first step to planning your compliance programme.
+          </p>
+        </div>
+
+        <ol class="timeline" aria-label="CARF implementation timeline">
+
+          <li class="timeline-item timeline-past">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-year" datetime="2023">2023</time>
+              <h3 class="timeline-event">CARF approved</h3>
+              <p>The OECD formally approved the Crypto-Asset Reporting Framework as a new global standard for automatic exchange of tax information relating to crypto-assets.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item timeline-past">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-year" datetime="2024">2024</time>
+              <h3 class="timeline-event">Technical standards published</h3>
+              <p>The OECD released the CARF XML schema, user guide, and interpretative guidance, giving businesses and developers the technical foundation needed to build reporting systems.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item timeline-now">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-year" datetime="2026">2026</time>
+              <h3 class="timeline-event">Preparation window: act now</h3>
+              <p>Firms need to assess their obligations, implement due diligence procedures, organise transaction data, and establish reporting workflows. Domestic legislation is in progress across multiple jurisdictions.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item timeline-future">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <time class="timeline-year" datetime="2027">2027</time>
+              <h3 class="timeline-event">First exchanges expected</h3>
+              <p>The first automatic exchanges of CARF information between tax authorities are expected to commence. Businesses in participating jurisdictions must be operationally ready before this date.</p>
+            </div>
+          </li>
+
+        </ol>
+
+        <p class="timeline-disclaimer">
+          Implementation timelines and domestic rules may vary by jurisdiction. Businesses should monitor
+          local legislative developments and seek appropriate professional advice.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WHAT CARF.DIGITAL WILL DO
+    ============================================================ -->
+    <section class="section section-light" id="product" aria-labelledby="product-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="product-heading">What CARF.digital will do</h2>
+          <p class="section-intro">
+            CARF.digital is designed to handle the operational complexity of CARF compliance,
+            from initial data collection through to reporting-ready output. Built for teams
+            that need a structured, auditable process, not a spreadsheet workaround.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">01</div>
+            <h3>Structured data capture</h3>
+            <p>
+              Collect and organise the customer and entity information required under CARF,
+              including identification data, tax residency, and self-certification, in a
+              structured, schema-aligned format from the outset.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">02</div>
+            <h3>Due diligence workflows</h3>
+            <p>
+              Step-by-step workflows to guide teams through CARF due diligence requirements:
+              determining reportability, identifying controlling persons, and documenting
+              the basis for each determination.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">03</div>
+            <h3>Reportable person and entity management</h3>
+            <p>
+              Maintain a clear, up-to-date record of which customers and entities are
+              reportable under CARF, across which jurisdictions, with the supporting
+              documentation to back every decision.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">04</div>
+            <h3>Transaction data organisation</h3>
+            <p>
+              Structure and validate the transaction data required for CARF reporting,
+              covering exchanges for fiat, crypto-to-crypto exchanges, and transfers,
+              matched to the OECD's schema requirements.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">05</div>
+            <h3>Review and audit trail</h3>
+            <p>
+              Every determination, document, and data point is logged with timestamps
+              and user attribution. Give your compliance team and your regulators
+              a clear, reviewable record of your CARF process.
+            </p>
+          </div>
+
+          <div class="feature-block">
+            <div class="feature-number" aria-hidden="true">06</div>
+            <h3>Reporting readiness and output preparation</h3>
+            <p>
+              Move from organised data to report-ready output, structured to align
+              with CARF XML schema requirements, minimising manual effort and reducing
+              the risk of errors in the filing process.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WHO IT'S FOR
+    ============================================================ -->
+    <section class="section section-tinted" id="audience" aria-labelledby="audience-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="audience-heading">Who it's for</h2>
+          <p class="section-intro">
+            CARF creates obligations across a broad range of businesses, not just the largest
+            crypto exchanges. If your business facilitates or intermediates crypto-asset transactions,
+            custody, or exchange, you likely need to understand your CARF position.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+
+          <div class="audience-item">
+            <h3>Crypto exchanges &amp; custodians</h3>
+            <p>Centralised and decentralised platforms facilitating crypto-asset trading, exchange, and custody.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Brokers &amp; dealers</h3>
+            <p>Businesses executing or arranging crypto-asset transactions on behalf of clients.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Fintechs &amp; payment firms</h3>
+            <p>Payment processors and fintech platforms that facilitate crypto-asset transfers or conversions.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Professional service firms</h3>
+            <p>Accountants, lawyers, and advisers supporting clients with CARF classification and compliance.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Family offices &amp; private wealth</h3>
+            <p>Structures with direct or indirect crypto-asset holdings that may trigger CARF reporting obligations.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>TCSPs &amp; fund administrators</h3>
+            <p>Trust and company service providers, fund administrators, and fiduciaries managing entities with crypto exposure.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Compliance &amp; RegTech teams</h3>
+            <p>In-house compliance functions and RegTech operators building CARF infrastructure for themselves or their clients.</p>
+          </div>
+
+          <div class="audience-item">
+            <h3>Other service providers</h3>
+            <p>Any business acting as an intermediary in crypto-asset transactions that falls within the CARF definition of a Reporting Crypto-Asset Service Provider.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TRUST / WHY US
+    ============================================================ -->
+    <section class="section section-light" id="trust" aria-labelledby="trust-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="trust-heading">Why CARF.digital</h2>
+          <p class="section-intro">
+            We are not entering this space cold. CARF.digital is built on direct operational
+            experience with international tax reporting standards, and on partnerships with
+            organisations already working at the intersection of regulatory compliance and
+            crypto-asset intelligence.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+
+          <div class="trust-block">
+            <h3>From the team behind Classifi</h3>
+            <p>
+              CARF.digital is built by the same team that developed Classifi, the software used
+              by compliance professionals for CRS and FATCA entity classification. We understand
+              how reporting frameworks work in practice: the edge cases, the documentation requirements,
+              and the operational pressures compliance teams face.
+            </p>
+          </div>
+
+          <div class="trust-block">
+            <h3>Deep experience in CRS and FATCA</h3>
+            <p>
+              CRS and FATCA set the template for CARF. Our background in building structured
+              classification and due diligence workflows for those frameworks means we are
+              translating proven methodology rather than starting from scratch.
+            </p>
+          </div>
+
+          <div class="trust-block">
+            <h3>In partnership with C-Thru</h3>
+            <p>
+              CARF.digital is developed in partnership with C-Thru, combining compliance
+              framework expertise with specialist knowledge in the crypto-asset reporting space.
+              Together, we are building something that reflects how real compliance processes work.
+            </p>
+          </div>
+
+          <div class="trust-block">
+            <h3>Built for operational use</h3>
+            <p>
+              CARF.digital is designed to be used by compliance teams, not just read about at
+              conferences. Every feature is shaped around the actual workflow of identifying
+              obligations, collecting data, reviewing determinations, and producing output.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT / REGISTER INTEREST
+    ============================================================ -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-layout">
+
+          <div class="contact-intro">
+            <h2 id="contact-heading">Register your interest</h2>
+            <p>
+              CARF.digital is in development. If you are assessing your CARF obligations or
+              planning your compliance programme, we would like to hear from you.
+            </p>
+            <p>
+              Register below and we will be in touch when the product is ready for early access.
+            </p>
+            <div class="contact-email-block">
+              <span class="contact-email-label">Or email us directly</span>
+              <a href="mailto:info@classifi.digital" class="contact-email-link">info@classifi.digital</a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form id="interest-form" class="interest-form" novalidate aria-label="Register interest form">
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="field-name">Full name <span class="required" aria-label="required">*</span></label>
+                  <input type="text" id="field-name" name="name" autocomplete="name" required aria-required="true" />
+                  <span class="field-error" id="error-name" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="field-company">Company <span class="required" aria-label="required">*</span></label>
+                  <input type="text" id="field-company" name="company" autocomplete="organization" required aria-required="true" />
+                  <span class="field-error" id="error-company" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="field-email">Work email <span class="required" aria-label="required">*</span></label>
+                  <input type="email" id="field-email" name="email" autocomplete="email" required aria-required="true" />
+                  <span class="field-error" id="error-email" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="field-role">Role</label>
+                  <input type="text" id="field-role" name="role" autocomplete="organization-title" />
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="field-jurisdiction">Jurisdiction <span class="required" aria-label="required">*</span></label>
+                  <input type="text" id="field-jurisdiction" name="jurisdiction" placeholder="e.g. United Kingdom" required aria-required="true" />
+                  <span class="field-error" id="error-jurisdiction" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="field-type">What best describes your business? <span class="required" aria-label="required">*</span></label>
+                  <div class="select-wrap">
+                    <select id="field-type" name="business_type" required aria-required="true">
+                      <option value="" disabled selected>Select one…</option>
+                      <option value="exchange">Crypto exchange or trading platform</option>
+                      <option value="custodian">Custodian or wallet provider</option>
+                      <option value="broker">Broker or dealer</option>
+                      <option value="fintech">Fintech or payment firm</option>
+                      <option value="professional">Professional services firm</option>
+                      <option value="family_office">Family office or private wealth</option>
+                      <option value="tcsp">TCSP or fund administrator</option>
+                      <option value="compliance">Compliance or RegTech team</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <span class="field-error" id="error-type" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="field-message">Message</label>
+                <textarea id="field-message" name="message" rows="4" placeholder="Tell us about your CARF obligations or what you're looking for…"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-large">Send registration</button>
+                <p class="form-note">We will not share your information with third parties.</p>
+              </div>
+
+            </form>
+
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+              <div class="form-success-inner">
+                <div class="form-success-icon" aria-hidden="true">✓</div>
+                <h3>Thank you for registering</h3>
+                <p>We have received your details and will be in touch as the product develops. You can also reach us at <a href="mailto:info@classifi.digital">info@classifi.digital</a>.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="footer-logo">CARF<span class="logo-dot">.</span>digital</span>
+        <p class="footer-tagline">From the team behind Classifi · In partnership with C-Thru</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Contact</a>
+        <a href="mailto:info@classifi.digital">info@classifi.digital</a>
+      </div>
+
+      <div class="footer-legal">
+        <p>
+          <strong>Disclaimer:</strong> CARF implementation timelines, domestic reporting obligations,
+          and applicable rules vary by jurisdiction. This website is for general information purposes
+          only and does not constitute legal, tax, or regulatory advice. Businesses should seek
+          appropriate professional guidance specific to their circumstances.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> CARF.digital. All rights reserved.
+          A product from the Classifi team, developed in partnership with C-Thru.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
