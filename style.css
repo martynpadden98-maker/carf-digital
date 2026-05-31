@@ -406,7 +406,7 @@ p {
   right: 0;
   background-color: var(--color-bg-white);
   border-bottom: 1px solid var(--color-border);
-  padding: var(--space-6) var(--space-5);
+  padding: var(--space-4) var(--space-4) var(--space-5);
   box-shadow: var(--shadow-md);
 }
 
@@ -414,31 +414,39 @@ p {
   display: block;
 }
 
-.mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
+.mobile-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
 }
 
-.mobile-menu a {
+.mobile-menu-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-2);
+  background-color: var(--color-bg-tinted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   font-size: var(--font-size-base);
   font-weight: 500;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   text-decoration: none;
+  text-align: center;
+}
+
+.mobile-menu-tile:hover {
+  background-color: var(--color-border);
+  color: var(--color-accent);
+}
+
+.mobile-menu-cta {
   display: block;
-  padding: var(--space-2) 0;
-}
-
-.mobile-menu a:hover { color: var(--color-accent); }
-
-.mobile-menu .btn {
-  margin-top: var(--space-2);
   width: 100%;
-}
-
-.mobile-menu .btn-primary,
-.mobile-menu .btn-primary:hover {
-  color: #fff;
+  text-align: center;
+  color: #fff !important;
+  box-sizing: border-box;
 }
 
 @media (max-width: 900px) {
